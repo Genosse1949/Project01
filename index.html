@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Книги, Магазин, Книжный магазин">
+    <meta name="description" content="Статут">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Статут</title>
+</head>
+<body>
+    <div class="nameBlock">
+        <p class="header">Мой кабинет</p>
+    </div>
+    <div class="mainBlock">
+        <div class="sidebarHolder">
+            <div class="sidebar">
+                <div class="customer">
+                    <img src="media/userIcon.svg" alt="no_Image">
+                    <div class="userInfo">
+                        <p>Михаил Мингалёв</p>
+                        <p class="addInfo">Покупатель</p>
+                    </div>
+                </div>
+                <ul class="optionMenu">
+                    <li><a href="#">Мой профиль</a></li>
+                    <li><a href="#">Statut Club</a></li>
+                    <li><a href="#">Заказы</a></li>
+                    <li><a href="#">Избранные товары</a></li>
+                    <li><a href="#">Отзывы о товарах</a></li>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="info">
+                <p class="profileName">Мой профиль</p>
+                <div class="profileSection">
+                    <p>Личные данные</p>
+                    <p>Адреса доставки</p>
+                    <p>Пароль</p>
+                </div>
+                <form action="#" method="post" class="changeProfileForm">
+                    <div class="formRow">
+                        <div>
+                            <label for="email" class="addInfo">E-mail <span class="rField">*</span></label>
+                            <input type="email" id="email" value="mingalyovuxcheck@gmail.com" name="email" require>
+                        </div>
+                    </div>
+                    <div class="formRow doubleInputRow">
+                        <div>
+                            <label for="phone" class="addInfo">Номер телефона <span class="rField">*</span></label>
+                            <input type="tel" id="phone" value="+7 910 832 26 28" name="phone" require>
+                        </div>
+                        <div>
+                            <label for="addPhone" class="addInfo">Дополнительный номер</label>
+                            <input type="tel" id="addPhone" value="" name="addPhone">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div>
+                            <label for="surname" class="addInfo">Фамилия<span class="rField">*</span></label>
+                            <input type="text" id="surname" value="Мингалёв" name="surname" require>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div>
+                            <label for="name" class="addInfo">Имя<span class="rField">*</span></label>
+                            <input type="text" id="name" value="Михаил" name="name" require>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div>
+                            <label for="fathername" class="addInfo">Отчество</label>
+                            <input type="text" id="fathername" value="Михайлович" name="fathername">
+                        </div>
+                    </div>
+                    <div class="formRow tripleInputRow">
+                        <div>
+                            <label for="dayOfBirth" class="addInfo">Дата рождения</label>
+                            <select id="dayOfBirth" name="dayOfBirth" class="pickDate"></select>
+                        </div>
+                        <div>
+                            <select id="monthOfBirth" name="monthOfBirth" class="pickDate"></select>
+                        </div>
+                        <div>
+                            <select id="yearOfBirth" name="yearOfBirth" class="pickDate"></select>
+                        </div>
+                    </div>
+                    <div class="formRow formRowSex">
+                        <div>
+                            <p class="addInfo">Пол</p>
+                            <input type="radio" id="sexM" value="male" name="sex" checked>
+                            <label for="sexM" class="radioLabel">Мужской</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="sexF" value="female" name="sex">
+                            <label for="sexF" class="radioLabel">Женский</label>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div>
+                            <input type="submit" value="Сохранить изменения">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
